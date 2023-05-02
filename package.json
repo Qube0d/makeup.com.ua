@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test tests/spec/example.e2e.js",
+    "test": "npx playwright test tests/spec/example.e2e.js --reporter=line,allure-playwright",
     "allure:generate": "npx allure generate allure-results --clean",
     "allure:open": "allure generate --clean ./allure-results && allure open"
   },
