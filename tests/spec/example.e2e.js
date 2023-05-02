@@ -32,3 +32,10 @@ test("Search the item", async ({ page }) => {
     await mainPage.result();
     await page.waitForTimeout(1500);
 });
+
+test("Fail", async ({ page }) => {
+    const mainPage = new MainPage(page);
+    const basketPage = new BasketPage(page);
+    await mainPage.navigate();
+    await basketPage.openBasket();
+})
