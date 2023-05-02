@@ -1,0 +1,22 @@
+{
+  "name": "pw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests/spec/example.e2e.js",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:open": "allure generate --clean ./allure-results && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0",
+    "allure-playwright": "^2.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "playwright-xpath": "^1.2.0"
+  }
+}
